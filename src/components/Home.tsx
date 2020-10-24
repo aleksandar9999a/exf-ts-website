@@ -69,17 +69,19 @@ export class Home extends Component {
 								<img src={logo} alt="logo" />
 							</div>
 
-							<div className="column right is-5-desktop mt-6">
-								<h1 className="title is-size-2-mobile is-1 is-spaced has-text-white">
-									Web Components on Steroids!
-								</h1>
+							<div className="column is-flex right is-5-desktop">
+								<div style={{ margin: 'auto' }}>
+									<h1 className="title is-size-2-mobile is-1 is-spaced has-text-white">
+									Web Components <br /> on Steroids!
+									</h1>
 
-								<h2 className="subtitle is-5 has-text-white">
-									Get your superpowers!
-								</h2>
+									<h2 className="subtitle is-5 has-text-white">
+										Get your superpowers!
+									</h2>
 
-								<div>
-									<button className="button is-primary">Get Started</button>
+									<div>
+										<button className="button is-primary is-rounded">Get Started</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -145,14 +147,14 @@ export class Home extends Component {
 						<h2 class="title has-text-white">Have you tried it yet?</h2>
 						
 						<div>
-							<button className="button is-primary">Get Started</button>
+							<button className="button is-primary is-rounded">Get Started</button>
 						</div>
 					</div>
 				</section>
 
 				<section className="section">
 					<div className="container">
-						<div className="card pt-5 pb-5 ml-6 mr-6">
+						<div className="card p-5">
 							<div className="card-body">
 								<div className="columns is-justify-content-center">
 									<div className="column left is-4">

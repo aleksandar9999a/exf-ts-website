@@ -11,16 +11,22 @@ export class Navbar extends Component {
 				<style>
                     @import "src/bulma.css";
                 </style>
+
+                <style>
+                    .no-border {
+                        { border: 'none' }
+                    }
+                </style>
 			</styles>
 		)
 	}
 
 	render() {
 		return (
-			<nav class="navbar is-info is-bold">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+			<nav>
+                <div className="container is-flex">
+                    <div className="navbar-brand">
+                        <span className="navbar-burger burger">
                             <span></span>
                             
                             <span></span>
@@ -28,19 +34,20 @@ export class Navbar extends Component {
                             <span></span>
                         </span>
                     </div>
-                    <div id="navbarMenuHeroB" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active">
+                    
+                    <div className="navbar-menu">
+                        <div className="navbar-end p-2">
+                            <exf-router-link className="button is-primary is-inverted is-outlined mr-2 no-border" route="/">
                                 Home
-                            </a>
-                            
-                            <a class="navbar-item">
+                            </exf-router-link>
+
+                            <exf-router-link className="button is-primary is-inverted is-outlined mr-2 no-border" route="/documentation">
                                 Documentation
-                            </a>
-                            
-                            <a class="navbar-item">
+                            </exf-router-link>
+
+                            <exf-router-link className="button is-primary is-inverted is-outlined no-border" route="/github">
                                 GitHub
-                            </a>
+                            </exf-router-link>
                         </div>
                     </div>
                 </div>
