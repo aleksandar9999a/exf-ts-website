@@ -17,7 +17,13 @@ export class Documentation extends Component {
     
 	render() {
 		return (
-			<div>Documentation</div>
+			<div>
+				<section className="section has-background-info">
+					<div className="container has-text-centered">
+						<h2 className="title is-3 is-spaced has-text-white">Documentation</h2>
+					</div>
+				</section>
+			</div>
 		)
 	}
 }

@@ -33,6 +33,12 @@ export class App extends Component {
 							'z-index': '2'
 						}
 					}
+
+					.wrapper {
+						{
+							'min-height': '95vh'
+						}
+					}
 				</style>
 			</styles>
 		)
@@ -43,7 +49,9 @@ export class App extends Component {
 			<div className="has-background-light is-relative">
 				<exf-navbar />
 
-				<exf-router routes={this.routes} />
+				<div className="wrapper">
+					<exf-router routes={this.routes} />
+				</div>
 
 				<exf-footer />
 			</div>

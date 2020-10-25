@@ -54,6 +54,12 @@ export class Home extends Component {
 							'max-height': '340px'
 						}
 					}
+
+					.has-background-cool {
+						{
+							'background': 'linear-gradient(to top, #e44d26, #f16529)'
+						}
+					}
 				</style>
 			</styles>
 		)
@@ -62,7 +68,7 @@ export class Home extends Component {
 	render() {
 		return (
 			<div>
-				<section className="hero is-info is-bold">
+				<section className="hero has-background-cool">
 					<div className="hero-body container">
 						<div className="columns is-justify-content-center">
 							<div className="column left is-5-desktop">
@@ -75,12 +81,18 @@ export class Home extends Component {
 									Web Components <br /> on Steroids!
 									</h1>
 
-									<h2 className="subtitle is-5 has-text-white">
-										Get your superpowers!
-									</h2>
+									<p className="subtitle is-5 has-text-white">
+										ExF - TS is TypeScript/JavaScript Tool for building Custom Web Components. Its purpose is to refine Web Components and present a cool way for their composing.
+									</p>
 
-									<div>
-										<button className="button is-primary is-rounded">Get Started</button>
+									<div className="is-flex">
+										<exf-router-link className="button is-link is-rounded" route="/docs">
+											Get SuperPowers
+										</exf-router-link>
+
+										<a href="https://github.com/aleksandar9999a/exf-ts" target="_blank" className="button is-dark is-rounded ml-5">
+											GitHub
+										</a>
 									</div>
 								</div>
 							</div>
@@ -90,7 +102,7 @@ export class Home extends Component {
 
 				<section className="section pb-6">
 					<div className="container has-text-centered">
-						<h2 className="title mb-2">Super Powers</h2>
+						<h2 className="title mb-2">SuperPowers</h2>
 
 						<div className="p-5"></div>
 						
@@ -138,16 +150,6 @@ export class Home extends Component {
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</section>
-
-				<section className="section has-background-info mt-5">
-					<div className="container has-text-centered">
-						<h2 class="title has-text-white">Have you tried it yet?</h2>
-						
-						<div>
-							<button className="button is-primary is-rounded">Get Started</button>
 						</div>
 					</div>
 				</section>

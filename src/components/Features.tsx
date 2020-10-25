@@ -6,7 +6,7 @@ import ExF, { Component, CustomElement } from 'exf-ts';
 })
 export class Features extends Component {
 	cards: { id: number | string, title: string, content: string }[] = [
-		{ id: 0, title: 'Web Components', content: 'This is a technology with which help I manage to combine the super powers of technologies listed below.' },
+		{ id: 0, title: 'Web Components', content: 'This is a technology with which help I manage to combine the superpowers of technologies listed below.' },
 		{ id: 2, title: 'Decorators', content: 'When I saw decorators for first time they seemed rather strange to me. But this doesn\'t make them bad.' },
 		{ id: 5, title: 'TSX', content: 'It\'s actually JSX. ExF delivers a familiar syntax such as React.' },
 		{ id: 1, title: 'Shadow DOM', content: 'Important part of ExF is encapsulation and here the Shadow DOM intervenes.' },
@@ -31,17 +31,17 @@ export class Features extends Component {
 	render() {
 		return (
 			<div>
-                <section class="section has-background-primary">
-					<div class="container has-text-centered">
-						<h2 class="title is-3 is-spaced">Features</h2>
+                <section className="section has-background-link">
+					<div className="container has-text-centered">
+						<h2 className="title is-3 is-spaced has-text-white">Features</h2>
 
-						<h2 class="subtitle is-6">
+						<p className="subtitle is-6 has-text-white">
 							ExF-TS combines different principles and technologies, thanks to which it acquired superpowers!
-						</h2>
+						</p>
 					</div>
 				</section>
 
-				<section class="section">
+				<section className="section">
 					<div className="container is-max-desktop pl-5 pr-5 mt-2">
 						<div className="columns is-flex-wrap-wrap is-justify-content-center">
 							{this.cards.map(({ id, title, content }) => {
