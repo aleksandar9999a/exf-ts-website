@@ -1,5 +1,5 @@
-import 'core-js';
 import './bulma.css';
+import 'core-js';
 
 import { ExFModule } from 'exf-ts';
 import { RouterModule } from 'exf-router';
