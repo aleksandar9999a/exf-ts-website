@@ -1,10 +1,19 @@
 import ExF, { Component, CustomElement } from 'exf-ts';
+import { INavbarItem } from '../interfaces/interfaces';
+import { RouterService } from '../services/RouterService';
 
 @CustomElement({
-	selector: 'exf-navbar'
+    selector: 'exf-navbar',
+    dependencyInjection: true
 })
 export class Navbar extends Component {
+    navbarItems: INavbarItem[] = [];
 
+    constructor(routerService: RouterService) {
+        super();
+
+        this.navbarItems = routerService.navbarItems;
+    }
 	stylize() {
 		return (
 			<styles>
@@ -37,17 +46,13 @@ export class Navbar extends Component {
                     
                     <div className="navbar-menu">
                         <div className="navbar-end p-2">
-                            <exf-router-link className="button is-primary is-inverted is-outlined mr-2 no-border" route="/">
-                                Home
-                            </exf-router-link>
-
-                            <exf-router-link className="button is-primary is-inverted is-outlined mr-2 no-border" route="/documentation">
-                                Documentation
-                            </exf-router-link>
-
-                            <exf-router-link className="button is-primary is-inverted is-outlined no-border" route="/github">
-                                GitHub
-                            </exf-router-link>
+                            {this.navbarItems.map(({ id, route, title }) => {
+                                return (
+                                    <exf-router-link id={id} className="button is-primary is-inverted is-outlined mr-2 no-border" route={route}>
+                                        {title}
+                                    </exf-router-link>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

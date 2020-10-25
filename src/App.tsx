@@ -1,21 +1,19 @@
 import { IRoute } from 'exf-router/lib/interfaces/interfaces';
 import ExF, { Component, CustomElement } from 'exf-ts';
+import { RouterService } from './services/RouterService';
 
-const routes = [
-	{ component: 'exf-home', path: '/' },
-	{ component: 'exf-docs', path: '/documentation' }
-]
 
 @CustomElement({
-	selector: 'exf-app'
+	selector: 'exf-app',
+	dependencyInjection: true
 })
 export class App extends Component {
 	routes: IRoute[] = []
 
-	constructor() {
-		super()
+	constructor(routerService: RouterService) {
+		super();
 
-		this.routes = routes
+		this.routes = routerService.routes;
 	}
 
 	stylize() {
