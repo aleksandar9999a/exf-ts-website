@@ -10,7 +10,7 @@ import { RouterService } from './services/RouterService';
 export class App extends Component {
 	routes: IRoute[] = []
 
-	constructor(routerService: RouterService) {
+	constructor(private routerService: RouterService) {
 		super();
 
 		this.routes = routerService.routes;

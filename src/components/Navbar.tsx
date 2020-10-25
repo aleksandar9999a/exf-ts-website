@@ -9,7 +9,7 @@ import { RouterService } from '../services/RouterService';
 export class Navbar extends Component {
     navbarItems: INavbarItem[] = [];
 
-    constructor(routerService: RouterService) {
+    constructor(private routerService: RouterService) {
         super();
 
         this.navbarItems = routerService.navbarItems;
