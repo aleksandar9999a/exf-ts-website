@@ -2,7 +2,8 @@ import { IRoute } from 'exf-router/lib/interfaces/interfaces';
 import ExF, { Component, CustomElement } from 'exf-ts';
 
 const routes = [
-	{ component: 'exf-home', path: '/' }
+	{ component: 'exf-home', path: '/' },
+	{ component: 'exf-docs', path: '/documentation' }
 ]
 
 @CustomElement({
