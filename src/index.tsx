@@ -10,6 +10,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Documentation } from './components/Documentation';
 import { Features } from './components/Features';
+import { SideMenu } from './components/SideMenu';
 
 ExFModule({
 	components: [
@@ -18,7 +19,8 @@ ExFModule({
 		Navbar,
 		Footer,
 		Documentation,
-		Features
+		Features,
+		SideMenu
 	],
 	modules: [
 		RouterModule

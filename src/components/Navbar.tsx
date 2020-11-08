@@ -35,16 +35,16 @@ export class Navbar extends Component {
 			<nav>
                 <div className="container is-flex">
                     <div className="navbar-brand">
-                        <span className="navbar-burger burger">
-                            <span></span>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
                             
-                            <span></span>
+                            <span aria-hidden="true"></span>
                             
-                            <span></span>
-                        </span>
+                            <span aria-hidden="true"></span>
+                        </a>
                     </div>
                     
-                    <div className="navbar-menu">
+                    <div id="navbarBasicExample" className="navbar-menu">
                         <div className="navbar-end p-2">
                             {this.navbarItems.map(({ id, route, title }) => {
                                 return (
