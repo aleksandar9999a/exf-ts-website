@@ -19,13 +19,7 @@ export class Features extends Component {
 	stylize() {
 		return (
 			<styles>
-				<style>
-                    @import "src/bulma.css";
-                </style>
-
-				<style>
-					.max-height {{ height: '85%' }}
-				</style>
+				.max-height {{ height: '85%' }}
 			</styles>
 		)
 	}

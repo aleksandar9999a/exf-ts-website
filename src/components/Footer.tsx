@@ -5,16 +5,6 @@ import ExF, { Component, CustomElement } from 'exf-ts';
 	selector: 'exf-footer'
 })
 export class Footer extends Component {
-    stylize() {
-		return (
-			<styles>
-				<style>
-                    @import "src/bulma.css";
-                </style>
-			</styles>
-		)
-    }
-    
 	render() {
 		return (
 			<footer class="footer has-background-light has-text-centered p-4">
@@ -23,7 +13,7 @@ export class Footer extends Component {
 					
 					<a href="http://opensource.org/licenses/mit-license.php"> MIT</a>.
 				</p>
-            </footer>
+			</footer>
 		)
 	}
 }

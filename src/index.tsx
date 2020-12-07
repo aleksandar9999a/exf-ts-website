@@ -13,6 +13,9 @@ import { Features } from './components/Features';
 import { SideMenu } from './components/SideMenu';
 
 ExFModule({
+	styles: [
+		'@import "src/bulma.css"'
+	],
 	components: [
 		App,
 		Home,

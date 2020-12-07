@@ -5,16 +5,6 @@ import ExF, { Component, CustomElement } from 'exf-ts';
 	selector: 'exf-sidemenu'
 })
 export class SideMenu extends Component {
-	stylize() {
-		return (
-			<styles>
-				<style>
-					@import "src/bulma.css";
-                </style>
-			</styles>
-		)
-	}
-
 	render() {
 		return (
 			<aside className="menu">

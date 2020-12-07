@@ -17,15 +17,9 @@ export class Navbar extends Component {
 	stylize() {
 		return (
 			<styles>
-				<style>
-                    @import "src/bulma.css";
-                </style>
-
-                <style>
-                    .no-border {
-                        { border: 'none' }
-                    }
-                </style>
+                .no-border {
+                    { border: 'none' }
+                }
 			</styles>
 		)
 	}

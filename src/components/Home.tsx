@@ -38,29 +38,23 @@ export class Home extends Component {
 	stylize() {
 		return (
 			<styles>
-				<style>
-                    @import "src/bulma.css";
-                </style>
-
-				<style>
-					.max-height {
-						{
-							'height': '100%'
-						}
+				.max-height {
+					{
+						'height': '100%'
 					}
+				}
 
-					.small-height {
-						{
-							'max-height': '340px'
-						}
+				.small-height {
+					{
+						'max-height': '340px'
 					}
+				}
 
-					.has-background-cool {
-						{
-							'background': 'linear-gradient(to top, #e44d26, #f16529)'
-						}
+				.has-background-cool {
+					{
+						'background': 'linear-gradient(to top, #e44d26, #f16529)'
 					}
-				</style>
+				}
 			</styles>
 		)
 	}
