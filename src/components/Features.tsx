@@ -42,14 +42,14 @@ export class Features extends Component {
 						<div className="columns is-flex-wrap-wrap is-justify-content-center">
 							{this.cards.map(({ id, title, content }) => {
 								return (
-									<div id={id} className="column is-3">
-										<div className="card pt-5 pl-4 pr-4 pb-2 max-height">
+									<div id={id} className="column is-4">
+										<div className="card pt-5 pl-4 pr-4 pb-3" style={{ height: '100%' }}>
 											<div className="has-text-centered">
 												<h3 className="title is-5 has-text-centered">
 													{title}
 												</h3>
 											</div>
-											
+
 											<div className="card-content">
 												{content}
 											</div>
