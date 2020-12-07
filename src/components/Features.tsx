@@ -27,7 +27,7 @@ export class Features extends Component {
 	render() {
 		return (
 			<div>
-                <section className="section has-background-link">
+				<section className="section has-background-link">
 					<div className="container has-text-centered">
 						<h2 className="title is-3 is-spaced has-text-white">Features</h2>
 
